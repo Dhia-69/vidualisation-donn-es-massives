@@ -8,11 +8,13 @@ Pour COMPETITIONS
 - Évolution du nombre de compétitions de football au fil des années.
 - Répartition des compétitions de football par type.
 -une Radar pour beaucoup attributs sur plusieurs compétitions
+![Football](images/football.png)
+![Competitions](images/competitions/Radar.png)
 POUR VELO COMPANY
 - Visualisation des réseaux de vélos par pays.
 - Carte des réseaux de vélos avec des marqueurs pour chaque réseau.
 -visualisation des resaux de données par societé
-
+![Bike](images/bikes.png)
 ## Technologies utilisées
 
 - JavaScript
