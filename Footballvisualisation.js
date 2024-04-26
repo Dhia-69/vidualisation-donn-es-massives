@@ -1,10 +1,5 @@
-// Fonction pour récupérer les données depuis l'API via un proxy
 function getFootballData() {
-    const proxyUrl = 'https://api.allorigins.win/raw?url=';
-    const apiUrl = 'http://api.football-data.org/v4/competitions/';
-    const url = proxyUrl + apiUrl;
-
-    return fetch(url)
+    return fetch('data.json') // Charger le fichier data.json localement
         .then(response => {
             if (!response.ok) {
                 throw new Error('Erreur lors de la récupération des données : ' + response.statusText);
@@ -12,12 +7,12 @@ function getFootballData() {
             return response.json();
         })
         .then(data => {
-            console.log('Données brutes :', data); // Ajout du console.log pour afficher les données brutes
+            console.log('Données brutes :', data); // Afficher les données brutes (optionnel)
             return data.competitions;
         })
         .catch(error => {
             console.error('Erreur lors de la récupération des données :', error);
-            return [];
+            return []; // Retourner un tableau vide en cas d'erreur
         });
 }
 
