@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualisation des Compétitions de Football et des Réseaux de Vélos</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="bar-chart-container">
+        <h2>Nombre de Compétitions de Football par Zone Géographique</h2>
+        <canvas id="chart"></canvas>
+    </div>
+
+    <div id="line-chart-container">
+        <h2>Évolution du Nombre de Compétitions de Football au Fil des Années</h2>
+        <div id="line-chart"></div>
+    </div>
+
+    <div id="pie-chart-container">
+        <h2>Répartition des Compétitions de Football par Type</h2>
+        <div id="pie-chart"></div>
+    </div>
+   
+    <canvas id="radar-chart"></canvas>
+    
+    <div id="bike-networks-container">
+        <h2>Nombre de Réseaux de Vélos par Pays</h2>
+        <canvas id="bike-networks-chart"></canvas>
+        
+    </div>
+  
+    <div id="bike-map-container">
+        
+        <h2>Carte des Réseaux de Vélos</h2>
+        <div id="bike-map"></div> <!-- Conteneur de la carte Leaflet -->
+    </div>
+    <h2 class="subtitle">Répartition des Réseaux de Vélos par Société</h2>
+                    <canvas id="bike-company-bar-chart"></canvas>
+
+    <script src="main.js" type="module"></script>
+    <script src="FootballVisualisation.js" type="module"></script>
+    <script src="bike.js" type="module"></script>
+</body>
+</html>
